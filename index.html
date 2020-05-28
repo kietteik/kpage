@@ -77,7 +77,7 @@
         <!--------------- section hero ends --------------->
         <!--------------- section PRODUCT starts --------------->
         <br />
-        <div class="wow fadeInUp section" data-wow-offset="300">
+        <div id="products" class="wow fadeInUp section" data-wow-offset="300">
             <div class="container-md">
                 <h1><a href="./product.html">Products</a></h1>
                 <p class="after-header">
@@ -411,5 +411,26 @@
     <script src="wow.min.js"></script>
     <script>
         new WOW().init();
+        window.scroll({
+            top: 2500,
+            left: 0,
+            behavior: "smooth",
+        });
+
+        // Scroll certain amounts from current position
+        window.scrollBy({
+            top: 100, // could be negative value
+            left: 0,
+            behavior: "smooth",
+        });
+        $(function () {
+            $("a[href*=#]").on("click", function (e) {
+                e.preventDefault();
+                $("html, body").animate({
+                    scrollTop: $($(this).attr("href")).offset().top,
+                    behavior: "smooth",
+                });
+            });
+        });
     </script>
 </html>

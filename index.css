@@ -15,7 +15,7 @@
 }
 html,
 body {
-    max-width: 100%;
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 body {
@@ -673,7 +673,7 @@ button.send:hover {
 /*---------------END footer section --------------- */
 #scroller a span {
     position: absolute;
-    bottom: 60px;
+    bottom: 100px;
     left: 50%;
     width: 24px;
     height: 24px;
