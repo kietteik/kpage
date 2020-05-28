@@ -53,7 +53,11 @@
                     </div>
                 </nav>
             </div>
-            <div class="search-section">
+            <div
+                class="wow fadeInDown search-section"
+                data-wow-offset="5"
+                data-wow-duration="5s"
+            >
                 <h1 class="searchbar-h1">Pick your next experiences</h1>
                 <form action="">
                     <div class="form-group">
@@ -69,11 +73,20 @@
                     </div>
                 </form>
             </div>
+            <section id="scroller" class="demo">
+                <a href="#products"><span></span></a>
+            </section>
         </div>
+
         <!--------------- section 1 ends --------------->
         <!--------------- section 2 starts --------------->
         <br />
-        <div class="section">
+        <div
+            class="wow fadeInUp section"
+            data-wow-offset="500"
+            data-wow-duration="1.5s"
+            id="products"
+        >
             <div class="container-md">
                 <h1><a href="./product.html">Products</a></h1>
                 <p class="after-header">
@@ -168,7 +181,11 @@
         <br />
         <!--------------- section 2 ends --------------->
         <!--------------- section 3 starts --------------->
-        <div class="section">
+        <div
+            class="wow fadeInUp section"
+            data-wow-offset="300"
+            data-wow-duration="1.5s"
+        >
             <div class="container-md">
                 <h1>Phu Quoc</h1>
                 <p class="after-header">
@@ -239,7 +256,11 @@
             </div>
         </div>
         <br />
-        <div class="section">
+        <div
+            class="wow fadeInUp section"
+            data-wow-offset="300"
+            data-wow-duration="1.5s"
+        >
             <div class="container-md">
                 <h1>An Giang</h1>
                 <p class="after-header">
@@ -315,7 +336,7 @@
         <!--------------- footer starts here --------------->
         <div class="footer">
             <div class="normal-contain">
-                <div class="normal">
+                <div class="wow fadeInUp normal">
                     <h4><i class="fas fa-comment-alt"></i>Our Community</h4>
                     <p>
                         We are a community-backed travel company. Every one of
@@ -323,7 +344,7 @@
                         trip is ever like another.
                     </p>
                 </div>
-                <div class="normal">
+                <div class="wow fadeInUp normal">
                     <h4><i class="fas fa-map-marker-alt"></i>Get inspired</h4>
                     <p>
                         Explore places you have never heard of and countries you
@@ -331,7 +352,7 @@
                         to become a globetrotter.
                     </p>
                 </div>
-                <div class="normal">
+                <div class="wow fadeInUp normal">
                     <h4>
                         <i class="fab fa-telegram-plane"></i>We plan for you
                     </h4>
@@ -341,7 +362,7 @@
                         result.
                     </p>
                 </div>
-                <div class="normal">
+                <div class="wow fadeInUp normal">
                     <h4>
                         <i class="fas fa-share-alt"></i>Share with the
                         commmunity
@@ -393,7 +414,7 @@
                                 <li
                                     id="fb"
                                     class="wow fadeInUp"
-                                    data-wow-delay="0.4s"
+                                    data-wow-delay="0.5s"
                                 >
                                     <i class="fab fa-facebook-f"></i>
                                 </li>
@@ -407,7 +428,7 @@
                                 <li
                                     id="ig"
                                     class="wow fadeInUp"
-                                    data-wow-delay="0.6s"
+                                    data-wow-delay="0.7s"
                                 >
                                     <i class="fab fa-youtube"></i>
                                 </li>
@@ -432,4 +453,15 @@
     <script src="./jquery.min.js"></script>
     <script src="./owl.carousel.min.js"></script>
     <script src="./owl-config.js"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: "wow", // default
+            animateClass: "animated", // default
+            offset: 10, // default
+            mobile: true, // default
+            live: true, // default
+        });
+        wow.init();
+    </script>
 </html>
