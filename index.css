@@ -671,11 +671,7 @@ button.send:hover {
 }
 
 /*---------------END footer section --------------- */
-@media screen and (max-width: 864px) {
-    #scroller {
-        left: 85%;
-    }
-}
+
 #scroller a span {
     position: absolute;
     bottom: 15%;
@@ -715,5 +711,10 @@ button.send:hover {
     100% {
         transform: rotate(-45deg) translate(-20px, 20px);
         opacity: 0;
+    }
+}
+@media screen and (max-width: 864px) {
+    #scroller a span {
+        left: 85%;
     }
 }
