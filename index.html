@@ -77,7 +77,12 @@
         <!--------------- section hero ends --------------->
         <!--------------- section PRODUCT starts --------------->
         <br />
-        <div id="products" class="wow fadeInUp section" data-wow-offset="300">
+        <div
+            class="wow fadeInUp section"
+            data-wow-offset="500"
+            data-wow-duration="1.5s"
+            id="products"
+        >
             <div class="container-md">
                 <h1><a href="./product.html">Products</a></h1>
                 <p class="after-header">
@@ -428,7 +433,6 @@
                 e.preventDefault();
                 $("html, body").animate({
                     scrollTop: $($(this).attr("href")).offset().top,
-                    behavior: "smooth",
                 });
             });
         });

@@ -673,7 +673,7 @@ button.send:hover {
 /*---------------END footer section --------------- */
 #scroller a span {
     position: absolute;
-    bottom: 100px;
+    bottom: 15%;
     left: 50%;
     width: 24px;
     height: 24px;
