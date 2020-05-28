@@ -3,10 +3,6 @@
 .firstsection {
     height: 80px;
 }
-.firstsection {
-    position: fixed;
-    z-index: 10;
-}
 
 .contact-form {
     margin: 0 auto;

@@ -80,7 +80,7 @@ a:hover {
 .parallax {
     /* The image used */
     /* Set a specific height */
-    height: 500px;
+    height: 100vh;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
