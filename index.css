@@ -671,6 +671,11 @@ button.send:hover {
 }
 
 /*---------------END footer section --------------- */
+@media screen and (max-width: 864px) {
+    #scroller {
+        left: 85%;
+    }
+}
 #scroller a span {
     position: absolute;
     bottom: 15%;
