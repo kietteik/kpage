@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>k.</title>
+        <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css" />
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -71,7 +73,7 @@
         <!--------------- section 1 ends --------------->
         <!--------------- section ABOUT starts --------------->
         <div class="section">
-            <div class="container about">
+            <div class="container-md about">
                 <h1><a href="#">ABOUT US</a></h1>
                 <br />
                 <div class="row hello">
@@ -142,12 +144,14 @@
         <!--------------- section PRODUCTS starts --------------->
         <br />
         <div class="section">
-            <div class="container">
-                <a href="./product.html"><h1>Products</h1></a>
+            <div class="container-md">
+                <h1><a href="./product.html">Products</a></h1>
                 <p class="after-header">
                     Let's try our most popular categories
                 </p>
-                <div class="product-shortlist">
+                <div
+                    class="owl-carousel owl-theme owl-loaded product-shortlist"
+                >
                     <div class="product-container">
                         <div class="product-image">
                             <img
@@ -158,7 +162,6 @@
                         <div class="category">Phu Quoc</div>
                         <a href="#"><p>Read more ></p></a>
                     </div>
-
                     <div class="product-container">
                         <div class="product-image">
                             <img
@@ -189,7 +192,46 @@
                         <div class="category">Hoi An</div>
                         <a href="#"><p>Read more ></p></a>
                     </div>
-                    <!-- -------adding clone------- -->
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img
+                                src="./image/harley-davidson-56R8TzG7Lzc-unsplash.jpg"
+                                alt="product-image"
+                            />
+                        </div>
+                        <div class="category">Phu Quoc</div>
+                        <a href="#"><p>Read more ></p></a>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img
+                                src="./image/liam-simpson-umycmizZHn8-unsplash.jpg"
+                                alt="product-image"
+                            />
+                        </div>
+                        <div class="category">Ha Giang</div>
+                        <a href="#"><p>Read more ></p></a>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img
+                                src="./image/jonathan-simcoe-exB4bFhUshM-unsplash.jpg"
+                                alt="product-image"
+                            />
+                        </div>
+                        <div class="category">An Giang</div>
+                        <a href="#"><p>Read more ></p></a>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img
+                                src="./image/chuttersnap-Cwk4lprGKbk-unsplash.jpg"
+                                alt="product-image"
+                            />
+                        </div>
+                        <div class="category">Hoi An</div>
+                        <a href="#"><p>Read more ></p></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,7 +239,7 @@
         <!--------------- section PRODUCTS ends --------------->
         <!--------------- footer starts here --------------->
         <div class="footer">
-            <div class="container">
+            <div class="container-md">
                 <br />
                 <br />
                 <div class="collab">
@@ -268,4 +310,7 @@
         </div>
         <!--------------- footer ends here --------------->
     </body>
+    <script src="./jquery.min.js"></script>
+    <script src="./owl.carousel.min.js"></script>
+    <script src="./owl-config.js"></script>
 </html>

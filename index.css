@@ -5,6 +5,7 @@
     --secondary-blue: #024143;
     --dark-secondary-blue: #022120;
     --secondary-black: #3a4042;
+    --white-card: #dfdfdf;
 }
 * {
     box-sizing: border-box;
@@ -31,8 +32,62 @@ a:hover {
     color: initial;
 }
 
+/*---------------  FOR OWL -----------------------------------------------------*/
+.owl-prev {
+    position: absolute;
+    left: -15px;
+    float: left;
+}
+.owl-next {
+    position: absolute;
+    right: -15px;
+    float: right;
+}
+.owl-prev span,
+.owl-next span {
+    font-weight: 600;
+    font-size: 24px;
+}
+.owl-prev:hover,
+.owl-next:hover {
+    opacity: 1;
+}
+.owl-prev,
+.owl-next {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    opacity: 0.6;
+    background-color: #3a4042 !important;
+    outline: none !important;
+    transition: 0.4s ease;
+}
+.owl-prev:hover,
+.owl-next:hover {
+    outline: none;
+}
+.owl-nav {
+    width: 100%;
+    position: absolute;
+    top: 38%;
+    margin: 0 auto;
+}
+.owl-dot {
+    outline: none !important;
+}
+/*---------------  FOR OWL -----------------------------------------------------*/
 /*---------------  BEGIN section1 -----------------------------------------------------*/
+.parallax {
+    /* The image used */
+    /* Set a specific height */
+    height: 500px;
 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .head-background {
     position: absolute;
     width: 100%;
@@ -43,10 +98,10 @@ a:hover {
     background-color: transparent;
 }
 .index-background {
-    background-image: url(./image/annie-spratt-d8FjB1_8xHQ-unsplash.jpg);
+    background-image: url(./image/larg/larg-annie-spratt-d8FjB1_8xHQ-unsplash.jpg);
 }
 .product-background {
-    background-image: url(./image/daniel-gonzalez-uijNK8ySOw8-unsplash.jpg);
+    background-image: url(./image/larg/larg-daniel-gonzalez-uijNK8ySOw8-unsplash.jpg);
 }
 .overlay-background {
     position: absolute;
@@ -204,6 +259,7 @@ nav ul li a:hover {
         cursor: pointer;
         z-index: 20;
         border-radius: 50%;
+        background-color: var(--secondary-black);
     }
     .nav-btn i {
         display: block;
@@ -326,7 +382,7 @@ p.after-header {
 .product-container {
     flex: 25%;
     position: relative;
-    /* min-width: 212px; */
+    min-width: 212px;
 }
 .product-image img {
     object-fit: cover;
@@ -424,7 +480,7 @@ p.after-header {
 }
 .prim-about-list {
     border-radius: 10px;
-    background-color: rgb(223, 223, 223);
+    background-color: #dfdfdf;
     padding: 10px;
 }
 
@@ -433,7 +489,7 @@ p.after-header {
 .contact-section p {
     text-align: justify;
     line-height: 2em;
-    max-width: 70%;
+    max-width: 100%;
 }
 
 .name,
@@ -476,10 +532,55 @@ button.send:hover {
 ::placeholder {
     color: rgb(173, 173, 173);
 }
+
+/*--------------- START section NORMAL ----------------------------------------------------------*/
+.normal-contain {
+    background-color: var(--white-card);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.normal {
+    max-width: 240px;
+    flex: 20%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.normal i {
+    color: var(--secondary-black);
+    font-size: 20px;
+    padding-right: 10px;
+    display: inline-block;
+}
+.normal h4 {
+    font-size: 16px;
+    color: var(--secondary-black);
+    font-weight: 600;
+    display: inline-block;
+}
+.normal p {
+    font-size: 14px;
+    color: var(--secondary-black);
+    margin-bottom: 0;
+}
+@media screen and (max-width: 1200px) {
+    .normal {
+        min-width: 40%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .normal {
+        flex: 100%;
+        min-width: 100%;
+    }
+}
+
+/*--------------- END section NORMAL ----------------------------------------------------------*/
 /*--------------- END section CONTACT ----------------------------------------------------------*/
 /*--------------- BEGIN footer section ------------------------------------------------- */
 .footer {
-    margin-top: 80px;
     background-color: #022120;
 }
 .collab {
@@ -514,16 +615,14 @@ button.send:hover {
     font-size: 14px;
     padding-left: 20px;
 }
-#fb {
+/* #fb * {
     color: #3b5998;
     font-weight: 600;
-    /* text-decoration: underline; */
 }
-#ig {
+#ig * {
     color: #c4302b;
     font-weight: 600;
-    /* text-decoration: underline; */
-}
+} */
 
 /* #fb::before {
     display: inline-block;

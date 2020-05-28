@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>k.</title>
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+        <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -11,16 +13,19 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="index.css" />
-
         <link rel="stylesheet" href="animate.css" />
+        <script
+            src="https://kit.fontawesome.com/f225bbc01f.js"
+            crossorigin="anonymous"
+        ></script>
         <script src="wow.min.js"></script>
     </head>
     <body>
         <!--------------- section hero here --------------->
         <div class="firstsection">
             <div class="introduce">
-                <div class="head-background index-background"></div>
-                <div class="overlay-background"></div>
+                <div class="parallax head-background index-background"></div>
+                <div class="parallax overlay-background"></div>
                 <nav>
                     <input type="checkbox" name="nav" id="nav" class="hidden" />
                     <label for="nav" class="nav-btn">
@@ -70,14 +75,15 @@
         <!--------------- section hero ends --------------->
         <!--------------- section PRODUCT starts --------------->
         <br />
-        <br />
         <div class="section">
-            <div class="container">
+            <div class="container-md">
                 <h1><a href="./product.html">Products</a></h1>
                 <p class="after-header">
                     Let's try our most popular categories
                 </p>
-                <div class="product-shortlist">
+                <div
+                    class="owl-carousel owl-theme owl-loaded product-shortlist"
+                >
                     <div class="product-container">
                         <div class="product-image">
                             <img
@@ -88,7 +94,46 @@
                         <div class="category">Phu Quoc</div>
                         <a href="#"><p>Read more ></p></a>
                     </div>
-
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img
+                                src="./image/liam-simpson-umycmizZHn8-unsplash.jpg"
+                                alt="product-image"
+                            />
+                        </div>
+                        <div class="category">Ha Giang</div>
+                        <a href="#"><p>Read more ></p></a>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img
+                                src="./image/jonathan-simcoe-exB4bFhUshM-unsplash.jpg"
+                                alt="product-image"
+                            />
+                        </div>
+                        <div class="category">An Giang</div>
+                        <a href="#"><p>Read more ></p></a>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img
+                                src="./image/chuttersnap-Cwk4lprGKbk-unsplash.jpg"
+                                alt="product-image"
+                            />
+                        </div>
+                        <div class="category">Hoi An</div>
+                        <a href="#"><p>Read more ></p></a>
+                    </div>
+                    <div class="product-container">
+                        <div class="product-image">
+                            <img
+                                src="./image/harley-davidson-56R8TzG7Lzc-unsplash.jpg"
+                                alt="product-image"
+                            />
+                        </div>
+                        <div class="category">Phu Quoc</div>
+                        <a href="#"><p>Read more ></p></a>
+                    </div>
                     <div class="product-container">
                         <div class="product-image">
                             <img
@@ -122,11 +167,11 @@
                 </div>
             </div>
         </div>
-        <br />
+
         <!--------------- section PRODUCT ends --------------->
         <!--------------- section ABOUT starts --------------->
         <div class="section">
-            <div class="container about">
+            <div class="container-md about">
                 <h1><a href="#">ABOUT US</a></h1>
                 <br />
                 <div class="prim-about-list">
@@ -169,43 +214,95 @@
         <!--------------- section CONTACT starts --------------->
         <br />
         <div class="section">
-            <div class="container about">
+            <div class="container-md about">
                 <h1>CONTACT w US</h1>
-                <div class="contact-form">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <input
-                                type="text"
-                                class="name"
-                                placeholder="Name"
-                            />
-                        </div>
-                        <div class="col-lg-6">
-                            <input
-                                type="email"
-                                class="email"
-                                placeholder="Email"
-                            />
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h4>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Libero minus veniam quidem assumenda, culpa
+                            accusantium blanditiis quae ab dolor non sapiente
+                            illo maiores inventore! Cumque accusantium
+                            voluptatem est culpa adipisci.
+                        </h4>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="contact-form">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input
+                                        type="text"
+                                        class="name"
+                                        placeholder="Name"
+                                    />
+                                </div>
+                                <div class="col-lg-6">
+                                    <input
+                                        type="email"
+                                        class="email"
+                                        placeholder="Email"
+                                    />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <textarea
+                                        class="message"
+                                        rows="4"
+                                        placeholder="Message"
+                                    ></textarea>
+                                </div>
+                            </div>
+                            <button class="send">SEND IT</button>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <textarea
-                                class="message"
-                                rows="4"
-                                placeholder="Message"
-                            ></textarea>
-                        </div>
-                    </div>
-                    <button class="send">SEND IT</button>
                 </div>
             </div>
         </div>
+        <div class="section"></div>
         <!--------------- section CONTACT ends --------------->
         <!--------------- footer starts here --------------->
         <div class="footer">
-            <div class="container">
-                <br />
+            <div class="normal-contain">
+                <div class="normal">
+                    <h4><i class="fas fa-comment-alt"></i>Our Community</h4>
+                    <p>
+                        We are a community-backed travel company. Every one of
+                        our trips is based on actual travel experiences and no
+                        trip is ever like another.
+                    </p>
+                </div>
+                <div class="normal">
+                    <h4><i class="fas fa-map-marker-alt"></i>Get inspired</h4>
+                    <p>
+                        Explore places you have never heard of and countries you
+                        have never been to. On Mapify, we are enabling everyone
+                        to become a globetrotter.
+                    </p>
+                </div>
+                <div class="normal">
+                    <h4>
+                        <i class="fab fa-telegram-plane"></i>We plan for you
+                    </h4>
+                    <p>
+                        Request a trip from our team of experts, curated
+                        individually for you. We are certain you will love the
+                        result.
+                    </p>
+                </div>
+                <div class="normal">
+                    <h4>
+                        <i class="fas fa-share-alt"></i>Share with the
+                        commmunity
+                    </h4>
+                    <p>
+                        We believe in being a part of your trip from end-to-end.
+                        On Mapify, you can share your experience with others
+                        travelers and inspire another person's trip.
+                    </p>
+                </div>
+            </div>
+            <div class="container-md">
                 <br />
                 <div class="collab">
                     <div class="row">
@@ -216,13 +313,9 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="hr">
                     <div class="row"></div>
                 </div>
-
-                <br />
-
                 <div class="info">
                     <div class="row">
                         <div class="col-lg-4" id="personal">
@@ -232,34 +325,44 @@
                             <h4 class="wow fadeInUp" data-wow-delay="0.2s">
                                 ID: 1927021
                             </h4>
-                            <br /><br />
                         </div>
-
+                        <br />
                         <div class="col-lg-4" id="media">
                             <p class="wow fadeInUp" data-wow-delay="0s">
                                 follow us
                             </p>
-
                             <ul>
                                 <li
                                     id="fb"
                                     class="wow fadeInUp"
                                     data-wow-delay="0.4s"
                                 >
-                                    <span>f</span>acebook
+                                    <i class="fab fa-twitter"></i>
+                                </li>
+                                <li
+                                    id="fb"
+                                    class="wow fadeInUp"
+                                    data-wow-delay="0.4s"
+                                >
+                                    <i class="fab fa-facebook-f"></i>
                                 </li>
                                 <li
                                     id="ig"
                                     class="wow fadeInUp"
                                     data-wow-delay="0.6s"
                                 >
-                                    <span>i</span>nstagram
+                                    <i class="fab fa-instagram"></i>
+                                </li>
+                                <li
+                                    id="ig"
+                                    class="wow fadeInUp"
+                                    data-wow-delay="0.6s"
+                                >
+                                    <i class="fab fa-youtube"></i>
                                 </li>
                             </ul>
-
-                            <br /><br />
+                            <br />
                         </div>
-
                         <div class="col-lg-4" id="address">
                             <p class="wow fadeInUp" data-wow-delay="0s">
                                 email
@@ -267,7 +370,7 @@
                             <h4 class="wow fadeInUp" data-wow-delay="0.2s">
                                 kiet.nguyentuan@hcmut.edu.vn
                             </h4>
-                            <br /><br />
+                            <br />
                         </div>
                     </div>
                 </div>
@@ -275,4 +378,9 @@
         </div>
         <!--------------- footer ends here --------------->
     </body>
+    <script src="./jquery.min.js"></script>
+    <script src="./owl.carousel.min.js"></script>
+    <script src="./owl-config.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./parallax.min.js"></script>
 </html>
