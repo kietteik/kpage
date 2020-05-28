@@ -1,0 +1,18 @@
+.head-background,
+.overlay-background,
+.firstsection {
+    height: 80px;
+}
+.firstsection {
+    position: fixed;
+    z-index: 10;
+}
+.section h1 {
+    color: var(--secondary-black);
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 0 10px;
+    margin: 0 auto;
+    text-align: center;
+}
