@@ -3,38 +3,8 @@
 .firstsection {
     height: 80px;
 }
+
 .contact-form {
     margin: 0 auto;
     padding: 20px 10px;
 }
-/* .name,
-.email,
-.message {
-    background: none;
-    border: none;
-    outline: none;
-    padding: 4px 2px;
-    margin: 20px auto;
-    border-bottom: 1px solid black;
-    color: black;
-    width: 100%;
-}
-
-button.send {
-    background: none;
-    border: 1px solid black;
-    padding: 10px 40px;
-    transition: 0.4s ease;
-    cursor: pointer;
-    border-radius: 4px;
-    color: black;
-}
-
-button.send:hover {
-    background-color: black;
-    color: #047d81;
-}
-
-::placeholder {
-    color: rgb(173, 173, 173);
-} */
