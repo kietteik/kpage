@@ -3,7 +3,7 @@ $(".owl-customfade").owlCarousel({
     margin: 10,
     items: 1,
     animateOut: "fadeOut",
-    dots: false,
+    dots: true,
     autoplay: true,
     autoplayHoverPause: true,
 });
@@ -25,7 +25,7 @@ $(".owl-carousel").owlCarousel({
         },
         1000: {
             items: 4,
-            loop: false,
+            loop: true,
         },
     },
 });
@@ -33,7 +33,7 @@ $(".owl-carousel-navlist").owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
-    nav: true,
+    center: true,
     responsive: {
         0: {
             items: 2,
