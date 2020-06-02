@@ -1,3 +1,10 @@
+:root {
+    --primary-blue: #047d81;
+    --secondary-blue: #024143;
+    --dark-secondary-blue: #022120;
+    --secondary-black: #3a4042;
+    --white-card: #dfdfdf;
+}
 .head-background,
 .overlay-background,
 .firstsection {
@@ -12,4 +19,19 @@
     padding: 0 10px;
     margin: 0 auto;
     text-align: center;
+}
+.after-header {
+    text-align: center;
+}
+
+.paralax-image {
+    width: auto;
+    border-radius: 10px 10px 0 0;
+    height: 320px;
+    background: url(./image/larg/larg-daniel-gonzalez-uijNK8ySOw8-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.prim-about-list {
+    border-radius: 0 0 10px 10px;
 }

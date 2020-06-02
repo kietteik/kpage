@@ -339,7 +339,7 @@ nav ul li a:hover {
 .searchbar {
     margin-top: 20px 0;
     width: 100%;
-    height: 6vh;
+    height: 50px;
 }
 .blue-button {
     margin-top: 20px;
@@ -384,6 +384,8 @@ p.after-header {
     flex: 25%;
     position: relative;
     min-width: 212px;
+    max-width: 280px;
+    margin: 0 auto;
 }
 .product-image img {
     object-fit: cover;
@@ -531,7 +533,15 @@ button.send:hover {
 } */
 
 ::placeholder {
-    color: rgb(173, 173, 173);
+    color: var(--secondary-black);
+}
+.get-in-touch {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.get-in-touch h4 {
+    font-size: 32px;
 }
 
 /*--------------- START section NORMAL ----------------------------------------------------------*/
@@ -723,8 +733,7 @@ button.send:hover {
 
 /*---------------END SCROLLER prop --------------- */
 /*---------------CARDS --------------- */
-.cards {
-}
+
 .profile-card-3 {
     font-family: "Open Sans", Arial, sans-serif;
     position: relative;
@@ -741,6 +750,7 @@ button.send:hover {
     float: left;
     width: 100%;
     height: 200px;
+    object-fit: cover;
     overflow: hidden;
 }
 .profile-card-3 .background-block .background {

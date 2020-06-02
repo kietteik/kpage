@@ -27,6 +27,9 @@ $(".owl-carousel").owlCarousel({
             items: 4,
             loop: true,
         },
+        1440: {
+            items: 5,
+        },
     },
 });
 $(".owl-carousel-navlist").owlCarousel({
@@ -34,6 +37,7 @@ $(".owl-carousel-navlist").owlCarousel({
     margin: 10,
     responsiveClass: true,
     center: true,
+    nav: false,
     responsive: {
         0: {
             items: 2,

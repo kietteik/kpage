@@ -3,3 +3,60 @@
 .firstsection {
     height: 50vh;
 }
+
+.blue-text {
+    color: var(--primary-blue);
+}
+.white-text {
+    color: white;
+}
+
+.section h1 {
+    color: var(--secondary-black);
+    text-transform: none;
+    font-size: 64px;
+    font-weight: 800;
+    padding: 0 10px;
+    text-align: center;
+}
+p.after-header {
+    text-align: center;
+}
+/* -----NAV BUTTON----- */
+.nav-button-list {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-button {
+    border: 1px solid var(--secondary-black);
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 5px;
+    margin: 10px 10px;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+}
+.nav-button:hover {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+.nav-button:hover > .title,
+.nav-button:hover > .icon i {
+    color: white;
+}
+.nav-button * {
+    color: var(--secondary-black);
+}
+.title {
+    margin-right: auto;
+}
+.icon {
+    margin-left: auto;
+}
+.owl-carousel-navlist .owl-nav {
+    display: none !important;
+}
+.owl-carousel-navlist .owl-dots {
+    display: none !important;
+}
+/* -----NAV BUTTON----- */
