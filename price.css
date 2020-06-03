@@ -5,11 +5,6 @@
     --secondary-black: #3a4042;
     --white-card: #dfdfdf;
 }
-
-* {
-    color: var(--secondary-black);
-}
-
 html {
     box-sizing: border-box;
 }
@@ -43,7 +38,7 @@ html {
     padding: 10px 10px;
     display: flex;
     border-radius: 5px;
-    margin: 10px 10px;
+    margin: 10px auto;
     transition: all 0.3s ease;
     flex-grow: 1;
 }
@@ -68,22 +63,6 @@ html {
 .owl-carousel-navlist .owl-nav {
     display: none !important;
 }
-@media screen and (max-width: 992px) {
-    .image-show-right {
-        display: none;
-    }
-}
-@media screen and (max-width: 864px) {
-    .section h1 {
-        font-size: 32px;
-    }
-    .image-show-right {
-        display: none;
-    }
-}
-@media screen and (max-width: 425px) {
-}
-
 .image-show {
     padding: 20px;
 }
@@ -109,6 +88,7 @@ html {
     font-size: 28px;
     font-weight: 700;
     padding: 10px;
+    color: var(--secondary-black);
 }
 .header3 {
     font-size: 24px;

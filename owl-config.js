@@ -8,6 +8,33 @@ $(".owl-customfade").owlCarousel({
     autoplayHoverPause: true,
 });
 
+$(".owl-2rows").owlCarousel({
+    multipleRow: true,
+    rows: 2,
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 2,
+        },
+        600: {
+            items: 3,
+        },
+        864: {
+            items: 3,
+        },
+        1000: {
+            items: 4,
+            loop: true,
+        },
+        1440: {
+            items: 5,
+        },
+    },
+});
+
 $(".owl-carousel").owlCarousel({
     loop: true,
     margin: 10,
@@ -32,6 +59,7 @@ $(".owl-carousel").owlCarousel({
         },
     },
 });
+
 $(".owl-carousel-navlist").owlCarousel({
     loop: true,
     margin: 10,
@@ -50,7 +78,28 @@ $(".owl-carousel-navlist").owlCarousel({
         },
         1000: {
             items: 6,
-            loop: false,
+        },
+    },
+});
+
+$("#owl-comments").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 2,
+        },
+        600: {
+            items: 3,
+        },
+        864: {
+            items: 3,
+        },
+        1000: {
+            items: 3,
+            loop: true,
         },
     },
 });
