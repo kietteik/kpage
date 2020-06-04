@@ -479,7 +479,6 @@ p.after-header {
     .product-container {
         flex: 100%;
         position: relative;
-        /* min-width: 50%; */
     }
 }
 /*--------------- END section-2 ----------------------------------------------------------*/
