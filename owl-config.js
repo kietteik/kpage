@@ -5,7 +5,6 @@ $(".owl-customfade").owlCarousel({
     animateOut: "fadeOut",
     dots: true,
     autoplay: true,
-    autoplayHoverPause: true,
 });
 
 $(".owl-2rows").owlCarousel({
@@ -42,6 +41,9 @@ $(".owl-carousel").owlCarousel({
     nav: true,
     responsive: {
         0: {
+            items: 1,
+        },
+        425: {
             items: 2,
         },
         600: {

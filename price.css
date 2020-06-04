@@ -63,6 +63,12 @@ html {
 .owl-carousel-navlist .owl-nav {
     display: none !important;
 }
+
+@media screen and (max-width: 864px) {
+    .section h1 {
+        font-size: 48px;
+    }
+}
 .image-show {
     padding: 20px;
 }
@@ -131,6 +137,7 @@ html {
     font-size: 12px;
     padding: 7px 20px;
 }
+
 .profile-card-5 .card-img-block {
     width: 91%;
     margin: 0 auto;
@@ -157,4 +164,11 @@ html {
 .profile-card-5 .btn-primary {
     background-color: var(--secondary-blue);
     border-color: var(--secondary-blue);
+    transition: all 0.3s ease;
+    outline: none !important;
+}
+.profile-card-5 .btn-primary:hover {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+    color: black;
 }

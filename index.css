@@ -82,6 +82,9 @@ a:hover {
     display: flex;
     align-items: center;
 }
+.vertical-align {
+    margin: 0 auto;
+}
 
 /*--------------- GENERAL -----------------------------------------------------*/
 /*---------------  FOR OWL -----------------------------------------------------*/
@@ -428,7 +431,7 @@ p.after-header {
 .product-shortlist {
     margin-top: 10px;
     display: flex;
-    justify-content: safe;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .product-container {
