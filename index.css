@@ -848,6 +848,41 @@ p.after-header {
 }
 
 /*---------------END SCROLLER prop --------------- */
+/* -----NAV BUTTON----- */
+.nav-button-list {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-button {
+    border: 1px solid var(--secondary-black);
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 5px;
+    margin: 10px auto;
+    transition: all 0.3s ease;
+    flex-grow: 1;
+    cursor: pointer;
+}
+.nav-button:hover {
+    background-color: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+.nav-button:hover > .title,
+.nav-button:hover > .icon i {
+    color: white;
+}
+.nav-button * {
+    color: var(--secondary-black);
+    cursor: pointer;
+}
+.title {
+    margin-right: auto;
+}
+.icon {
+    margin-left: auto;
+}
+/* -----NAV BUTTON----- */
+
 /*---------------CARDS --------------- */
 
 .profile-card-3 {
