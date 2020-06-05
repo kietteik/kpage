@@ -49,7 +49,7 @@ a:hover {
     margin: 0;
 }
 .center {
-    text-align: center;
+    text-align: center !important;
 }
 .blue-text {
     color: var(--primary-blue);
@@ -72,6 +72,9 @@ a:hover {
 }
 .small {
     font-size: 14px !important;
+}
+.medium {
+    font-size: 18px !important;
 }
 .line {
     background-color: var(--secondary-black);
